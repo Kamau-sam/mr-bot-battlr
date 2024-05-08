@@ -1,38 +1,98 @@
-.App {
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background: url("../images/my robot.avif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.app-container {
   text-align: center;
+  padding: 20px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-heading {
+  color: #c45a5f;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sort-bar {
+  margin-bottom: 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.sort-button {
+  padding: 10px 20px;
+  margin-right: 5px;
+  background-color: #046409;
   color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
 
-.App-link {
-  color: #61dafb;
+.sort-button:hover {
+  background-color: #19d257;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.ui.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 0 5%;
+}
+
+.ui.column {
+  flex: 1;
+  min-width: 250px;
+  max-width: 250px;
+  margin: 10px;
+}
+
+.ui.card {
+  cursor: pointer;
+  border: 1px solid #75e3f7;
+  transition: box-shadow 0.3s;
+  width: 100%;
+}
+
+.ui.card:hover {
+  box-shadow: 0px 0px 8px #ec2727;
+}
+
+.image img {
+  width: 100%;
+  height: auto;
+}
+
+.bot-name {
+  color: #32cd32;
+  font-size: 20px;
+}
+
+.bot-role {
+  color: #ffd700;
+  font-size: 18px;
+}
+
+.bot-code {
+  color: #00bfff;
+  font-size: 16px;
+  word-break: break-all;
+}
+
+.enlist-button,
+.back-link {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.enlist-button:hover,
+.back-link:hover {
+  background-color: #388e3c;
 }
